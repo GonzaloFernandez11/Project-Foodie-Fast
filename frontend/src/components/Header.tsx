@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import MobileNav from "./MobileNav";
 
 const Header = () => {
     return (
@@ -6,15 +7,15 @@ const Header = () => {
             <div className="container mx-auto flex justify-between items-center">
                 <Link 
                 to="/" 
-                className="text-3x1 font-bold tracking-tight text-pink-600">
+                className="text-3xl font-bold tracking-tight text-pink-600">
                     FoodieFast.com
                 </Link>
+                <div className="md:hidden">
+                    <MobileNav />
+                </div>
             </div>
         </div>
     );
 };
 
 export default Header;
-
-// Reemplazar el color Orange por otro, o sino el fondo por un gris oscuro.
-// En el Link podría agregar una imagen también.
