@@ -14,9 +14,12 @@ const AppRoutes = () => {
             } 
             />
             <Route path='/user-profile' element = {<span>User Profile Page</span>} />
-            <Route path='*' element = {<Navigate to='/' />} />
+            <Route path='*' element = { <Navigate to='/' /> }/>
         </Routes>
     );
 };
 
 export default AppRoutes;
+
+
+// Construir una página 404 cuando la ruta es incorrecta con un link que nos devuelva a HomePage.
