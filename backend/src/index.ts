@@ -2,7 +2,7 @@ import express, { Request, Response } from 'express';
 import cors from 'cors';
 import 'dotenv/config';
 import mongoose from 'mongoose';
-import router from './routes/myUserRoute';
+import MyUserRoute from './routes/myUserRoute';
 
 mongoose.connect(process.env.MONGODB_CONNECTION_STRING as string)
     .then(() => console.log('Connected to the database'))
@@ -17,7 +17,7 @@ app.use( cors() );
 
 
 
-app.use("/api/my/user", router);
+app.use("/api/my/user", MyUserRoute);
 
 app.listen(7000, () => {
     console.log('Server started on localhost:7000')
