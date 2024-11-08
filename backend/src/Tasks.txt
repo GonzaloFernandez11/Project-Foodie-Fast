@@ -1,0 +1,7 @@
+- Buenos días, señor Hunt... ?, señora?, señorita, señore?? como sea, empecemos de nuevo.
+
+    "Buenos días Developer. Su misión, si decide aceptarla, consiste en salvar al mundo [*Tos* proyecto *Tos* *Tos*] contribuyendo en los siguientes puntos:
+    1. Crear en el backend las validaciones para el token que obtenemos desde auth0 en el frontend, al postear al user registrado se recibe un token que debemos validar.
+    2. No creí que llegaría tan lejos, así que no tengo un plan para el paso dos, improvise un poco sobre la marcha y ya veremos dijo el ciego.
+    
+    Este mensaje se autodestruirá en 5 segundos. ¡Buena Suerte!"
