@@ -5,3 +5,11 @@
     1. Crear User Prodile Form, osea, creación del formulario para el perfil del usuario.
     
     Este mensaje se autodestruirá en 5 segundos. ¡Buena Suerte!"
+    
+    
+    Tareita para cuando haya tiempito:
+    ## Para el Viernes es crucial llegar por lo menos a las 8hrs (ya vamos 4 y poquito) si llego a 10 mejor.
+    ## De esa forma puedo matar el proyecto para los primeros días de la semana que viene.
+        1. Repasar lo del auth0, especialmente los middlewares, validation y controllers.
+        2. Repasar shadcn, y el form que construímos para entenderlo bien.
+        3. Ver lo del Github Activity Generator: https://github.com/Shpota/github-activity-generator
