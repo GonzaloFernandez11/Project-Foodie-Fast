@@ -1,6 +1,14 @@
 import LoadingButton from '@/components/LoadingButton';
 import { Button } from '@/components/ui/button';
-import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel } from '@/components/ui/form';
+import { 
+    Form, 
+    FormControl, 
+    FormDescription, 
+    FormField, 
+    FormItem, 
+    FormLabel, 
+    FormMessage, 
+} from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
@@ -14,22 +22,22 @@ const formSchema = z.object({
     city: z.string().min(1, 'City is required'),
 });
 
-type userFormData = z.infer <typeof formSchema>;
+export type UserFormData = z.infer<typeof formSchema>;
 
 
-type Props = {
-    onSave: (userProfileData: userFormData) => void;
+type Props = { 
+    onSave: (userProfileData: UserFormData) => void;
     isLoading: boolean;
 }
 
-const UserProfileForm = ( {onSave, isLoading}: Props ) => {
-    const form = useForm<userFormData>({
+const UserProfileForm = ( {onSave, isLoading}: Props, ) => {
+    const form = useForm<UserFormData>({
         resolver: zodResolver(formSchema),
     });
 
     return (
         <Form {...form} >
-            <form onSubmit={form.handleSubmit(onSave)} className='space-y-4 bg-gray-50 rounded-lg md:p-10'> {/* Buscar otros colores y probarlos*/}
+            <form onSubmit={form.handleSubmit(onSave)} className='space-y-4 border-2 border-slate-300 rounded-lg md:p-10'>
                 <div>
                     <h2 className='tex-2xl font-bold'>User Profile Form</h2>
                     <FormDescription>
@@ -50,39 +58,43 @@ const UserProfileForm = ( {onSave, isLoading}: Props ) => {
                     <FormItem>
                         <FormLabel>Name</FormLabel>
                         <FormControl>
-                            <Input {...field} disabled className='bg-white'/>
+                            <Input {...field} className='bg-transparent border-slate-300'/>
                         </FormControl>
+                        <FormMessage />
                     </FormItem>
                 )}
                 />
 
                 <div className='flex flex-col md:flex-row gap-4'>
                 <FormField control={form.control} name='addressLine1' render={ ({field}) => (
-                    <FormItem>
+                    <FormItem className='flex-1'>
                         <FormLabel>Address Line 1</FormLabel>
                         <FormControl>
-                            <Input {...field} disabled className='bg-white'/>
+                            <Input {...field} className='bg-transparent border-slate-300'/>
                         </FormControl>
+                        <FormMessage />
                     </FormItem>
                 )}
                 />
 
                 <FormField control={form.control} name='country' render={ ({field}) => (
-                    <FormItem>
+                    <FormItem className='flex-1'>
                         <FormLabel>Country</FormLabel>
                         <FormControl>
-                            <Input {...field} disabled className='bg-white'/>
+                            <Input {...field} className='bg-transparent border-slate-300'/>
                         </FormControl>
+                        <FormMessage />
                     </FormItem>
                 )}
                 />
 
                 <FormField control={form.control} name='city' render={ ({field}) => (
-                    <FormItem>
+                    <FormItem className='flex-1'>
                         <FormLabel>City</FormLabel>
                         <FormControl>
-                            <Input {...field} disabled className='bg-white'/>
+                            <Input {...field} className='bg-transparent border-2 border-slate-300'/>
                         </FormControl>
+                        <FormMessage />
                     </FormItem>
                 )}
                 />
