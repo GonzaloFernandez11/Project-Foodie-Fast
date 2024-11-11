@@ -12,4 +12,5 @@
     ## De esa forma puedo matar el proyecto para los primeros días de la semana que viene.
         1. Repasar lo del auth0, especialmente los middlewares, validation y controllers.
         2. Repasar shadcn, y el form que construímos para entenderlo bien.
-        3. Ver lo del Github Activity Generator: https://github.com/Shpota/github-activity-generator
+        3. Investigar un poquito acerca de las librerías y herramientas que usamos (shadcn, lucide-react, etc) (Documentation).
+        4. Ver lo del Github Activity Generator: https://github.com/Shpota/github-activity-generator
