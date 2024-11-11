@@ -2,7 +2,6 @@
 
     "Buenos días Developer. Su misión, si decide aceptarla, consiste en salvar al mundo [*Tos* proyecto *Tos* *Tos*] contribuyendo en los siguientes puntos:
 
-    1. Verificar que las implementaciones recientes funcionen eficientemente. (en efecto funcionan :check)
-    2. Actualizar el perfil de usuario (API) --> Esto puede ser complejo, ¡Concentración!
+    1. Crear User Prodile Form, osea, creación del formulario para el perfil del usuario.
     
     Este mensaje se autodestruirá en 5 segundos. ¡Buena Suerte!"
