@@ -2,9 +2,9 @@
 
     "Buenos días Developer. Su misión, si decide aceptarla, consiste en salvar al mundo [*Tos* proyecto *Tos* *Tos*] contribuyendo en los siguientes puntos:
 
-    1. Modificar el color de las letras de los errores en el form. --> Hecho
-    2. Modificar lo que escribí e UserProfilePage. --> Esto pa después
-    3. Update User Profile Request, osea, vamos a actualizar las request del user profile.
+    1. Update User Profile Request, osea, vamos a actualizar las request del user profile. --> Hecho
+    2. Toast Notification -- Osea, instalar una libreria que me va a a permitir configurar notificaciones.
+    3. Revisar MongoDB y controlar que este funcionando como corresponde la conexión y la carga de datos.
     
     Este mensaje se autodestruirá en 5 segundos. ¡Buena Suerte!"
     
@@ -16,3 +16,4 @@
         2. Repasar shadcn, y el form que construímos para entenderlo bien.
         3. Investigar un poquito acerca de las librerías y herramientas que usamos (shadcn, lucide-react, etc) (Documentation).
         4. Ver lo del Github Activity Generator: https://github.com/Shpota/github-activity-generator
+        5. Modificar la imagen del Home con Paint, probar otros estilos, figuras, incluso otras imágenes.
