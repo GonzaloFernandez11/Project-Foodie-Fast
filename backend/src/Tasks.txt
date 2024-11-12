@@ -2,8 +2,8 @@
 
     "Buenos días Developer. Su misión, si decide aceptarla, consiste en salvar al mundo [*Tos* proyecto *Tos* *Tos*] contribuyendo en los siguientes puntos:
 
-    1. Modificar el color de las letras de los errores en el form.
-    2. Modificar lo que escribí e UserProfilePage.
+    1. Modificar el color de las letras de los errores en el form. --> Hecho
+    2. Modificar lo que escribí e UserProfilePage. --> Esto pa después
     3. Update User Profile Request, osea, vamos a actualizar las request del user profile.
     
     Este mensaje se autodestruirá en 5 segundos. ¡Buena Suerte!"
