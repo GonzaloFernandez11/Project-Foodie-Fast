@@ -5,7 +5,8 @@
     1. Update User Profile Request, osea, vamos a actualizar las request del user profile. --> Hecho
     2. Toast Notification -- Osea, instalar una libreria que me va a a permitir configurar notificaciones. --> Hecho
     3. Traer la info del perfil de usuario actual y pre poblar los campos del formulario para que el usuario los pueda cambiar --> FALTAAAA
-    4. Revisar MongoDB y controlar que este funcionando como corresponde la conexión y la carga de datos.
+    4. Corregir errores que tengo en la carga de nueva información
+    5. Revisar MongoDB y controlar que este funcionando como corresponde la conexión y la carga de datos.
     
     Este mensaje se autodestruirá en 5 segundos. ¡Buena Suerte!"
     
