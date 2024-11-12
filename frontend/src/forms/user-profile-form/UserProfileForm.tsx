@@ -46,7 +46,7 @@ const UserProfileForm = ( {onSave, isLoading}: Props, ) => {
                 </div>
                 <FormField control={form.control} name='email' render={ ({field}) => (
                     <FormItem>
-                        <FormLabel>Email</FormLabel>
+                        <FormLabel className='text-white'>Email</FormLabel>
                         <FormControl>
                             <Input {...field} disabled className='bg-white'/>
                         </FormControl>
@@ -56,11 +56,11 @@ const UserProfileForm = ( {onSave, isLoading}: Props, ) => {
 
                 <FormField control={form.control} name='name' render={ ({field}) => (
                     <FormItem>
-                        <FormLabel>Name</FormLabel>
+                        <FormLabel className='text-white'>Name</FormLabel>
                         <FormControl>
                             <Input {...field} className='bg-transparent border-slate-300'/>
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className='text-red-500' />
                     </FormItem>
                 )}
                 />
@@ -68,33 +68,33 @@ const UserProfileForm = ( {onSave, isLoading}: Props, ) => {
                 <div className='flex flex-col md:flex-row gap-4'>
                 <FormField control={form.control} name='addressLine1' render={ ({field}) => (
                     <FormItem className='flex-1'>
-                        <FormLabel>Address Line 1</FormLabel>
+                        <FormLabel className='text-white'>Address Line 1</FormLabel>
                         <FormControl>
                             <Input {...field} className='bg-transparent border-slate-300'/>
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className='text-red-500' />
                     </FormItem>
                 )}
                 />
 
                 <FormField control={form.control} name='country' render={ ({field}) => (
                     <FormItem className='flex-1'>
-                        <FormLabel>Country</FormLabel>
+                        <FormLabel className='text-white'>Country</FormLabel>
                         <FormControl>
                             <Input {...field} className='bg-transparent border-slate-300'/>
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className='text-red-500' />
                     </FormItem>
                 )}
                 />
 
                 <FormField control={form.control} name='city' render={ ({field}) => (
                     <FormItem className='flex-1'>
-                        <FormLabel>City</FormLabel>
+                        <FormLabel className='text-white'>City</FormLabel>
                         <FormControl>
                             <Input {...field} className='bg-transparent border-2 border-slate-300'/>
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className='text-red-500' />
                     </FormItem>
                 )}
                 />
