@@ -27,8 +27,8 @@ const createCurrentUser = async (req: Request, res: Response) => {
 
 const updateCurrentUser = async (req: Request, res: Response) => {
     try {
-        const { name, addressLine1, country, city, userId } = req.body;
-        const user = await User.findById(userId);
+        const { name, addressLine1, country, city } = req.body;
+        const user = await User.findById(req.userId);
 
         if(!user) {
            res.status(404).json({ message: "User not found" });
