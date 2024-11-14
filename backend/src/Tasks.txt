@@ -1,12 +1,6 @@
-- Buenos días, señor Hunt... ?, señora?, señorita, señore?? como sea, empecemos de nuevo.
-
     "Buenos días Developer. Su misión, si decide aceptarla, consiste en salvar al mundo [*Tos* proyecto *Tos* *Tos*] contribuyendo en los siguientes puntos:
 
-    1. Update User Profile Request, osea, vamos a actualizar las request del user profile. --> Hecho
-    2. Toast Notification -- Osea, instalar una libreria que me va a a permitir configurar notificaciones. --> Hecho
-    3. Corregir errores que tengo en la carga de nueva información --> Hechooo
-    4. Revisar MongoDB y controlar que este funcionando como corresponde la conexión y la carga de datos. --> Hecho, funciona perfectooo
-    5. Traer la info del perfil de usuario actual y pre poblar los campos del formulario para que el usuario los pueda cambiar --> FALTAAAA
+    1. Hacer el Deployment Overview.
     
     Este mensaje se autodestruirá en 5 segundos. ¡Buena Suerte!"
     
@@ -14,8 +8,11 @@
     Tareita para cuando haya tiempito:
     ## Para el Viernes es crucial llegar por lo menos a las 8hrs (ya vamos 4 y poquito) si llego a 10 mejor.
     ## De esa forma puedo matar el proyecto para los primeros días de la semana que viene.
+    {{ Revisar por qué cuando actualizo la página me deslogueo automáticamente, arreglar eso. }}
+
         1. Repasar lo del auth0, especialmente los middlewares, validation y controllers.
         2. Repasar shadcn, y el form que construímos para entenderlo bien.
         3. Investigar un poquito acerca de las librerías y herramientas que usamos (shadcn, lucide-react, etc) (Documentation).
         4. Ver lo del Github Activity Generator: https://github.com/Shpota/github-activity-generator
         5. Modificar la imagen del Home con Paint, probar otros estilos, figuras, incluso otras imágenes.
+        6. <Outlet /> de React-Router-Dom sirve para renderizar todos los componentes childrens. 
