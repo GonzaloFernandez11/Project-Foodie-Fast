@@ -10,7 +10,9 @@ import {
     FormMessage, 
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
+import { User } from '@/types';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 
@@ -26,14 +28,22 @@ export type UserFormData = z.infer<typeof formSchema>;
 
 
 type Props = { 
+    currentUser: User;
     onSave: (userProfileData: UserFormData) => void;
     isLoading: boolean;
 }
 
-const UserProfileForm = ( {onSave, isLoading}: Props, ) => {
+const UserProfileForm = ( {onSave, isLoading, currentUser}: Props, ) => {
     const form = useForm<UserFormData>({
         resolver: zodResolver(formSchema),
+        defaultValues: currentUser,
     });
+
+
+useEffect(() => {
+    form.reset(currentUser);
+}, [currentUser, form])
+
 
     return (
         <Form {...form} >
@@ -48,7 +58,7 @@ const UserProfileForm = ( {onSave, isLoading}: Props, ) => {
                     <FormItem>
                         <FormLabel className='text-white'>Email</FormLabel>
                         <FormControl>
-                            <Input {...field} disabled className='bg-white'/>
+                            <Input {...field} disabled className='bg-white text-gray-500'/>
                         </FormControl>
                     </FormItem>
                 )}
