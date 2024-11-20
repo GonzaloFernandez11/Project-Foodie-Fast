@@ -1,6 +1,6 @@
     "Buenos días Developer. Su misión, si decide aceptarla, consiste en salvar al mundo [*Tos* proyecto *Tos* *Tos*] contribuyendo en los siguientes puntos:
 
-    1. Hacer el Deployment Overview.
+    1. Hacer el Deployment (Backend & Frontend development).
     
     Este mensaje se autodestruirá en 5 segundos. ¡Buena Suerte!"
     
