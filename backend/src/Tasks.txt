@@ -2,6 +2,7 @@
 
     1. Hacer el Deployment (Backend & Frontend development). Ready
     2. Manage Restaurant Overview.
+    --> Lo primero en lo que debería trabajar es en el 'Claudinary Setup', todo este trabajo esta orientado al objetivo de crear un formulario dinámico para el usuario administrador.
     
     Este mensaje se autodestruirá en 5 segundos. ¡Buena Suerte!"
     
