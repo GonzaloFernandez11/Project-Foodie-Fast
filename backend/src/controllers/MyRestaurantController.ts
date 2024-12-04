@@ -5,7 +5,7 @@ import mongoose from 'mongoose';
 
 const createMyRestaurant = async ( req: Request, res: Response ) => {
     try {
-        const existingRestaurant = await Restaurant.find({ user: req.userId })
+        const existingRestaurant = await Restaurant.findOne({ user: req.userId })
 
         if(existingRestaurant) {
             res.status(409).json({ message: 'User restaurant already exists' });
@@ -27,7 +27,7 @@ const createMyRestaurant = async ( req: Request, res: Response ) => {
         res.status(201).send(restaurant);
         
     } catch (error) {
-        console.log('error');
+        console.log(error);
         res.status(500).json({ message: 'Something went wrong!' });
     }
 }
