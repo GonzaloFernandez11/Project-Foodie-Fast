@@ -14,3 +14,5 @@ const upload = multer({
 
 // Route --> api/my/restaurant
 router.post('/', upload.single('imageFile'), MyRestaurantController.createMyRestaurant);
+
+export default router;
